@@ -1,44 +1,55 @@
 #include <stdio.h>
-// To use libsensors, include its header file:
+#include <string.h>
 #include <sensors/sensors.h>
 
 int main(void) {
-    // Initialize the libsensors library using the sensors_init function:
     if (sensors_init(NULL) != 0) {
         fprintf(stderr, "Failed to initialize libsensors\n");
         return 1;
     }
 
-    // Use sensors_get_detected_chips to retrieve the list of available chips:
     const sensors_chip_name *chip;
-    int chip_number = 0;
+    int chip_nr = 0;
+    while ((chip = sensors_get_detected_chips(NULL, &chip_nr)) != NULL) {
+        printf("%s\n", chip->prefix);
+        printf("Adapter: %s\n", sensors_get_adapter_name(&chip->bus));
 
-    while ((chip = sensors_get_detected_chips(NULL, &chip_number)) != NULL) {
-        printf("Chip: %s\n", sensors_get_adapter_name(&chip->bus));
+        const sensors_feature *feat;
+        int feat_nr = 0;
+        while ((feat = sensors_get_features(chip, &feat_nr)) != NULL) {
+            printf("%s:\n", sensors_get_label(chip, feat));
 
-        // Use sensors_get_features to iterate through all features of a chip:
-        const sensors_feature *feature;
-        int feature_number = 0;
+            const sensors_subfeature *sub;
+            int sub_nr = 0;
+            while ((sub = sensors_get_all_subfeatures(chip, feat, &sub_nr)) != NULL) {
+                double v;
+                if (sensors_get_value(chip, sub->number, &v) != 0)
+                    continue;
 
-        while ((feature = sensors_get_features(chip, &feature_number)) != NULL) {
-            printf(" Feature: %s\n", sensors_get_label(chip, feature));
+                // strip trailing "_input" for display
+                char disp[64];
+                strncpy(disp, sub->name, sizeof(disp));
+                disp[sizeof(disp)-1] = '\0';   // always null‑terminate
 
-            // To obtain sensor readings, use sensors_get_value:
-            const sensors_subfeature *subfeature;
-            int subfeature_number = 0;
+                char *p = strrchr(disp, '_');  // find last underscore
+                if (p)
+                    *p = '\0';                 // chop it off
 
-            while ((subfeature = sensors_get_all_subfeatures(
-                        chip,
-                        feature,
-                        &subfeature_number)) != NULL) {
-                if (subfeature->flags & SENSORS_MODE_R) {
-                    double value;
-                    if (sensors_get_value(chip,
-                                          subfeature->number,
-                                          &value) == 0) {
-                        printf("  Subfeature %-2d: %.2f\n",
-                               subfeature->number, value);
-                    }
+                printf("  %-10s", disp);
+
+
+                printf("  %-10s", disp);
+                switch (sub->type) {
+                    case SENSORS_SUBFEATURE_TEMP_INPUT:
+                        printf(" %+0.1f°C\n", v);          break;
+                    case SENSORS_SUBFEATURE_FAN_INPUT:
+                        printf(" %.0f RPM\n", v);         break;
+                    case SENSORS_SUBFEATURE_IN_INPUT:
+                        printf(" %.2f V\n", v / 1000.0);  break;
+                    case SENSORS_SUBFEATURE_POWER_INPUT:
+                        printf(" %.2f W\n", v / 1000.0);  break;
+                    default:
+                        printf(" %f\n", v);               break;
                 }
             }
         }
