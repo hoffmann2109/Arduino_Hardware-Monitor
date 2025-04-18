@@ -216,6 +216,27 @@ ReadTemps_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 ReadTemps_SOURCE_DIR:STATIC=/home/thomas/Documents/Arduino Hardware Monitor/PC
 
+//Path to a library.
+SENSORS_LIB:FILEPATH=/usr/lib/libsensors.so
+
+//Value Computed by CMake
+main_BINARY_DIR:STATIC=/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug
+
+//Value Computed by CMake
+main_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+main_SOURCE_DIR:STATIC=/home/thomas/Documents/Arduino Hardware Monitor/PC
+
+//Value Computed by CMake
+sensor_monitor_BINARY_DIR:STATIC=/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug
+
+//Value Computed by CMake
+sensor_monitor_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+sensor_monitor_SOURCE_DIR:STATIC=/home/thomas/Documents/Arduino Hardware Monitor/PC
+
 
 ########################
 # INTERNAL cache entries
