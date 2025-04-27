@@ -126,8 +126,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug",
-		"source" : "/home/thomas/Documents/Arduino Hardware Monitor/PC"
+		"build" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/cmake-build-debug",
+		"source" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend"
 	},
 	"version" : 
 	{

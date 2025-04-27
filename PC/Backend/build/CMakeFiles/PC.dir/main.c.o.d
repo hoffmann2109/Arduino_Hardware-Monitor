@@ -23,4 +23,19 @@ CMakeFiles/PC.dir/main.c.o: \
  /usr/include/bits/pthread_stack_min-dynamic.h \
  /usr/include/bits/pthread_stack_min.h /usr/include/bits/posix2_lim.h \
  /usr/include/string.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/strings.h
+ /usr/include/bits/types/__locale_t.h /usr/include/strings.h \
+ /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/fcntl-linux.h \
+ /usr/include/bits/types/struct_timespec.h /usr/include/bits/endian.h \
+ /usr/include/bits/endianness.h /usr/include/bits/types/time_t.h \
+ /usr/include/bits/stat.h /usr/include/bits/struct_stat.h \
+ /usr/include/termios.h /usr/include/bits/termios.h \
+ /usr/include/bits/termios-struct.h /usr/include/bits/termios-c_cc.h \
+ /usr/include/bits/termios-c_iflag.h /usr/include/bits/termios-c_oflag.h \
+ /usr/include/bits/termios-baud.h /usr/include/bits/termios-c_cflag.h \
+ /usr/include/bits/termios-c_lflag.h /usr/include/bits/termios-tcflow.h \
+ /usr/include/bits/termios-misc.h /usr/include/sys/ttydefaults.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
+ /usr/include/bits/unistd_ext.h

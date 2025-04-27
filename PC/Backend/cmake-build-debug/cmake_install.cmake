@@ -1,4 +1,4 @@
-# Install script for directory: /home/thomas/Documents/Arduino Hardware Monitor/PC
+# Install script for directory: /home/thomas/Arduino_Hardware-Monitor/PC/Backend
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,7 +45,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug/install_local_manifest.txt"
+  file(WRITE "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/cmake-build-debug/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

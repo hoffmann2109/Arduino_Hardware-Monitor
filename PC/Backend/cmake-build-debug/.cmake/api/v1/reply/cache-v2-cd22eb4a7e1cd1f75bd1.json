@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug"
+			"value" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -491,7 +491,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC"
+			"value" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -731,7 +731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "PC"
+			"value" : "sensordump"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1030,18 +1030,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Details about finding PkgConfig"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "[/usr/bin/pkg-config][v2.4.3()]"
-		},
-		{
 			"name" : "PC_BINARY_DIR",
 			"properties" : 
 			[
@@ -1051,7 +1039,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug"
+			"value" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/cmake-build-debug"
 		},
 		{
 			"name" : "PC_IS_TOP_LEVEL",
@@ -1075,135 +1063,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC"
-		},
-		{
-			"name" : "PKG_CONFIG_ARGN",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Arguments to supply to pkg-config"
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
-			"name" : "PKG_CONFIG_EXECUTABLE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "pkg-config executable"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/bin/pkg-config"
-		},
-		{
-			"name" : "ReadTemps_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug"
-		},
-		{
-			"name" : "ReadTemps_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "ReadTemps_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC"
-		},
-		{
-			"name" : "SENSORS_CFLAGS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_CFLAGS_I",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_CFLAGS_OTHER",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_FOUND",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_INCLUDEDIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend"
 		},
 		{
 			"name" : "SENSORS_LIB",
@@ -1215,247 +1075,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/libsensors.so"
-		},
-		{
-			"name" : "SENSORS_LIBDIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_LIBS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_LIBS_L",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_LIBS_OTHER",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_LIBS_PATHS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_MODULE_NAME",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_PREFIX",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_STATIC_CFLAGS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_STATIC_CFLAGS_I",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_STATIC_CFLAGS_OTHER",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_STATIC_LIBDIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_STATIC_LIBS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_STATIC_LIBS_L",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_STATIC_LIBS_OTHER",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_STATIC_LIBS_PATHS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_VERSION",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_libsensors_INCLUDEDIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_libsensors_LIBDIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_libsensors_PREFIX",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "SENSORS_libsensors_VERSION",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/usr/lib64/libsensors.so"
 		},
 		{
 			"name" : "_CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -1482,7 +1102,7 @@
 			"value" : "TRUE"
 		},
 		{
-			"name" : "main_BINARY_DIR",
+			"name" : "sensordump_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1491,10 +1111,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug"
+			"value" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/cmake-build-debug"
 		},
 		{
-			"name" : "main_IS_TOP_LEVEL",
+			"name" : "sensordump_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1506,7 +1126,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "main_SOURCE_DIR",
+			"name" : "sensordump_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1515,43 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC"
-		},
-		{
-			"name" : "sensor_monitor_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC/cmake-build-debug"
-		},
-		{
-			"name" : "sensor_monitor_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "sensor_monitor_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/thomas/Documents/Arduino Hardware Monitor/PC"
+			"value" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend"
 		}
 	],
 	"kind" : "cache",
