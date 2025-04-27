@@ -18,8 +18,8 @@ void setup(void) {
 void loop(void) {
   u8g2.clearBuffer();					// clear the internal memory
   u8g2.setFont(u8g2_font_ncenB08_tr);	// choose a suitable font
-  u8g2.drawStr(0,15,"CPU Temperature:");	// write something to the internal memory
-  u8g2.drawStr(0,30,"GPU Temperature: ");  // write something to the internal memory
+  u8g2.drawStr(0,15,"CPU Temp:");	// write something to the internal memory
+  u8g2.drawStr(0,30,"GPU Temp: ");  // write something to the internal memory
   u8g2.sendBuffer();					// transfer internal memory to the display
   delay(1000);  
 }
