@@ -65,7 +65,7 @@ int main(void) {
                                            "%s: %.2f\n",
                                            sensors_get_label(chip, feat),
                                            value);
-                        printf("Temperature of %s: %.2f\n", sensors_get_label(chip, feat), value);
+                        printf("%s: %.2f %c \n", sensors_get_label(chip, feat), value, 'C');
                         // Composite: Nvme drive overall
                         // Sensor 1: Nvme individual
                         // temp1: ACPI interface
@@ -78,7 +78,6 @@ int main(void) {
         }
         sleep(1);
     }
-
     // Not reached because of the infinite loop:
     close(serial);
     sensors_cleanup();
