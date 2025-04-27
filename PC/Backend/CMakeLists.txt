@@ -1,9 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
-project(sensordump C)
+project(Backend C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(sensordump main.c)
+add_executable(Backend main.c)
 
-# tell CMake to link against "-lsensors"
-target_link_libraries(sensordump PRIVATE sensors)
+target_link_libraries(Backend PRIVATE sensors)

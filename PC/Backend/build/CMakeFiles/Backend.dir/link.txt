@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -Wl,--dependency-file=CMakeFiles/Backend.dir/link.d CMakeFiles/Backend.dir/main.c.o -o Backend  -lsensors

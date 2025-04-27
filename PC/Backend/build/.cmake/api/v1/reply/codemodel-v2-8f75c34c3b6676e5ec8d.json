@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "sensordump",
+					"name" : "Backend",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "sensordump::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sensordump-Debug-06135aaab62c984deb3b.json",
-					"name" : "sensordump",
+					"id" : "Backend::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Backend-Debug-9d866c14b910564a9822.json",
+					"name" : "Backend",
 					"projectIndex" : 0
 				}
 			]
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/cmake-build-debug",
+		"build" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/build",
 		"source" : "/home/thomas/Arduino_Hardware-Monitor/PC/Backend"
 	},
 	"version" : 

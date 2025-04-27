@@ -38,37 +38,44 @@ int main(void) {
         const sensors_chip_name *chip; // *chip is a pointer to the sensors_chip_name struct
         int chip_nr = 0;
 
-        // For every Chip:
+        // For every Chip (Hardware chip - CPU, NVME, etc.):
         while ((chip = sensors_get_detected_chips(NULL, &chip_nr)) != NULL) {
             const sensors_feature *feat;
             int feat_nr = 0;
 
-            // For every Sensor:
+            // For every Sensor (Temperature, Fan, Usage, etc.):
             while ((feat = sensors_get_features(chip, &feat_nr)) != NULL) {
                 const sensors_subfeature *sub;
                 int sub_nr = 0;
 
-                // For every Subfeature:
+                // For every Subfeature (Temp_INPUT, Temp_MAX, etc.) :
                 while ((sub = sensors_get_all_subfeatures(chip, feat, &sub_nr)) != NULL) {
-                    if (!(sub->flags & SENSORS_MODE_R)) continue;
+                    if (!(sub->flags & SENSORS_MODE_R)) continue; // if not readable skip
 
                     double value;
-                    if (sensors_get_value(chip, sub->number, &value) != 0)
+                    if (sensors_get_value(chip, sub->number, &value) != 0) // if value is 0, skip
                         continue;
 
-                    // Right now, only CPU features:
-                    if (sub->type == SENSORS_SUBFEATURE_TEMP_INPUT) {
+                    // CPU subfeatures:
+                    if (sub->type == SENSORS_SUBFEATURE_TEMP_INPUT) { // '->' access a struct through a pointer
                         char buf[64];
+
+                        // Format and store into buffer:
                         int len = snprintf(buf, sizeof buf,
                                            "%s: %.2f\n",
                                            sensors_get_label(chip, feat),
                                            value);
+                        printf("Temperature of %s: %.2f\n", sensors_get_label(chip, feat), value);
+                        // Composite: Nvme drive overall
+                        // Sensor 1: Nvme individual
+                        // temp1: ACPI interface
+                        // Package id 0: Overall CPU temperature
+                        // Cores: individual CPU core temperature
                         write(serial, buf, len);
                     }
                 }
             }
         }
-
         sleep(1);
     }
 

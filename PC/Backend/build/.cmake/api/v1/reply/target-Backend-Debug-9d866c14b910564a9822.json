@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "sensordump"
+			"path" : "Backend"
 		}
 	],
 	"backtrace" : 1,
@@ -31,7 +31,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 9,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -42,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu99 -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu99"
 				}
 			],
 			"language" : "C",
@@ -60,7 +60,7 @@
 			]
 		}
 	],
-	"id" : "sensordump::@6890427a1f51a3e7e1df",
+	"id" : "Backend::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -81,8 +81,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "sensordump",
-	"nameOnDisk" : "sensordump",
+	"name" : "Backend",
+	"nameOnDisk" : "Backend",
 	"paths" : 
 	{
 		"build" : ".",

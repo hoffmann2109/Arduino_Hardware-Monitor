@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: sensordump
+# Project: Backend
 # Configurations: Debug
 # =============================================================================
 
@@ -41,38 +41,38 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/thomas/Arduino_Hardware-Monitor/PC/Backend/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target sensordump
+# Object build statements for EXECUTABLE target Backend
 
 
 #############################################
-# Order-only phony target for sensordump
+# Order-only phony target for Backend
 
-build cmake_object_order_depends_target_sensordump: phony || .
+build cmake_object_order_depends_target_Backend: phony || .
 
-build CMakeFiles/sensordump.dir/main.c.o: C_COMPILER__sensordump_unscanned_Debug /home/thomas/Arduino_Hardware-Monitor/PC/Backend/main.c || cmake_object_order_depends_target_sensordump
-  DEP_FILE = CMakeFiles/sensordump.dir/main.c.o.d
+build CMakeFiles/Backend.dir/main.c.o: C_COMPILER__Backend_unscanned_Debug /home/thomas/Arduino_Hardware-Monitor/PC/Backend/main.c || cmake_object_order_depends_target_Backend
+  DEP_FILE = CMakeFiles/Backend.dir/main.c.o.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/sensordump.dir
-  OBJECT_FILE_DIR = CMakeFiles/sensordump.dir
+  OBJECT_DIR = CMakeFiles/Backend.dir
+  OBJECT_FILE_DIR = CMakeFiles/Backend.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target sensordump
+# Link build statements for EXECUTABLE target Backend
 
 
 #############################################
-# Link the executable sensordump
+# Link the executable Backend
 
-build sensordump: C_EXECUTABLE_LINKER__sensordump_Debug CMakeFiles/sensordump.dir/main.c.o
-  DEP_FILE = CMakeFiles/sensordump.dir/link.d
+build Backend: C_EXECUTABLE_LINKER__Backend_Debug CMakeFiles/Backend.dir/main.c.o
+  DEP_FILE = CMakeFiles/Backend.dir/link.d
   FLAGS = -g
-  LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/sensordump.dir/link.d
+  LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/Backend.dir/link.d
   LINK_LIBRARIES = -lsensors
-  OBJECT_DIR = CMakeFiles/sensordump.dir
+  OBJECT_DIR = CMakeFiles/Backend.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = sensordump
-  TARGET_PDB = sensordump.dbg
+  TARGET_FILE = Backend
+  TARGET_PDB = Backend.dbg
 
 
 #############################################
@@ -108,7 +108,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/thomas/Arduino_Hardware-Monitor/PC/Backend/cmake-build-debug
 
-build all: phony sensordump
+build all: phony Backend
 
 # =============================================================================
 # Built-in targets

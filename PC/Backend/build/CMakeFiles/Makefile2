@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /home/thomas/Arduino_Hardware-Monitor/PC/Backend/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/PC.dir/all
+all: CMakeFiles/Backend.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/PC.dir/codegen
+codegen: CMakeFiles/Backend.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/PC.dir/clean
+clean: CMakeFiles/Backend.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/PC.dir
+# Target rules for target CMakeFiles/Backend.dir
 
 # All Build rule for target.
-CMakeFiles/PC.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PC.dir/build.make CMakeFiles/PC.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PC.dir/build.make CMakeFiles/PC.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/thomas/Arduino_Hardware-Monitor/PC/Backend/build/CMakeFiles --progress-num=1,2 "Built target PC"
-.PHONY : CMakeFiles/PC.dir/all
+CMakeFiles/Backend.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backend.dir/build.make CMakeFiles/Backend.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backend.dir/build.make CMakeFiles/Backend.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/thomas/Arduino_Hardware-Monitor/PC/Backend/build/CMakeFiles --progress-num=1,2 "Built target Backend"
+.PHONY : CMakeFiles/Backend.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/PC.dir/rule: cmake_check_build_system
+CMakeFiles/Backend.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomas/Arduino_Hardware-Monitor/PC/Backend/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PC.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Backend.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomas/Arduino_Hardware-Monitor/PC/Backend/build/CMakeFiles 0
-.PHONY : CMakeFiles/PC.dir/rule
+.PHONY : CMakeFiles/Backend.dir/rule
 
 # Convenience name for target.
-PC: CMakeFiles/PC.dir/rule
-.PHONY : PC
+Backend: CMakeFiles/Backend.dir/rule
+.PHONY : Backend
 
 # codegen rule for target.
-CMakeFiles/PC.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PC.dir/build.make CMakeFiles/PC.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/thomas/Arduino_Hardware-Monitor/PC/Backend/build/CMakeFiles --progress-num=1,2 "Finished codegen for target PC"
-.PHONY : CMakeFiles/PC.dir/codegen
+CMakeFiles/Backend.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backend.dir/build.make CMakeFiles/Backend.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/thomas/Arduino_Hardware-Monitor/PC/Backend/build/CMakeFiles --progress-num=1,2 "Finished codegen for target Backend"
+.PHONY : CMakeFiles/Backend.dir/codegen
 
 # clean rule for target.
-CMakeFiles/PC.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PC.dir/build.make CMakeFiles/PC.dir/clean
-.PHONY : CMakeFiles/PC.dir/clean
+CMakeFiles/Backend.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backend.dir/build.make CMakeFiles/Backend.dir/clean
+.PHONY : CMakeFiles/Backend.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
