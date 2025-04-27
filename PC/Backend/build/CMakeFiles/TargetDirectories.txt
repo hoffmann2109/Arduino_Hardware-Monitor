@@ -1,0 +1,3 @@
+/home/thomas/Arduino_Hardware-Monitor/PC/Backend/build/CMakeFiles/PC.dir
+/home/thomas/Arduino_Hardware-Monitor/PC/Backend/build/CMakeFiles/edit_cache.dir
+/home/thomas/Arduino_Hardware-Monitor/PC/Backend/build/CMakeFiles/rebuild_cache.dir

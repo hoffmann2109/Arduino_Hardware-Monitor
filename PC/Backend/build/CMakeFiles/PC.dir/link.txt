@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -Wl,--dependency-file=CMakeFiles/PC.dir/link.d CMakeFiles/PC.dir/main.c.o -o PC  -lsensors

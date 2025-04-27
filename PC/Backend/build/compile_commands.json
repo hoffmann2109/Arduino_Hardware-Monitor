@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/build",
+  "command": "/usr/bin/gcc   -g -std=gnu11 -o CMakeFiles/PC.dir/main.c.o -c /home/thomas/Arduino_Hardware-Monitor/PC/Backend/main.c",
+  "file": "/home/thomas/Arduino_Hardware-Monitor/PC/Backend/main.c",
+  "output": "CMakeFiles/PC.dir/main.c.o"
+}
+]
