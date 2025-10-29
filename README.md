@@ -31,11 +31,7 @@ The project consists of two main components:
 
 ### 1. Arduino Frontend (`Arduino/Frontend/Display/`)
 
-1.  **Connect Display**: Wire the SSD1306 display to the Arduino Mega's I2C pins:
-    * Display VCC -> Arduino 5V
-    * Display GND -> Arduino GND
-    * Display SDA -> Arduino SDA (Pin 20)
-    * Display SCL -> Arduino SCL (Pin 21)
+1.  **Connect Display**: Wire the SSD1306 display to the Arduino Mega's I2C pins
 2.  **Open Project**: Open the `Arduino/Frontend/Display/` folder in VS Code with the PlatformIO extension installed.
 3.  **Build & Upload**: Connect the Arduino Mega to your PC via USB. Use the PlatformIO interface (usually buttons in the status bar) to build and upload the `src/main.cpp` sketch to the Arduino.
 
@@ -63,5 +59,3 @@ The project consists of two main components:
 6.  The Arduino frontend continuously reads lines from the serial port.
 7.  It parses each line to extract the label and the floating-point temperature value, storing them in arrays but skipping lines containing "Core".
 8.  Periodically (every 3 seconds), it clears the OLED display buffer, draws the stored labels and temperatures using the U8g2 library, and sends the buffer to the display.
-
----
